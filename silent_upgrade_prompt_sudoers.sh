@@ -2,7 +2,7 @@
 
 
 
-echo "Do you want to add yourself to the sudoers group? [Y,n]"
+echo "Do you want to add yourself to the sudoers group and not require a password when runnig sudo? [Y,n]"
 
 read input
 if [[ $input == "Y" || $input == "y" ]]; then
@@ -13,3 +13,4 @@ fi
 
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -qq < /dev/null > /dev/null
+sudo DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -qq < /dev/null > /dev/null
