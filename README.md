@@ -10,4 +10,8 @@ To make this file run automatically daily or weekly you can add it to your syste
 
 0 12 * * * ~/Debian_silent_upgrade/silent_upgrade.sh
 
+To access your crontab run this command in the terminal:
+
+"crontab -e"
+
 Note: I cloned this repository to my home directory. You may beed to the change the file path if you cloned the repository somewhere else. 
